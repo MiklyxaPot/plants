@@ -118,4 +118,52 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
    color: #E06733;
 }
 
+/* *****************welcome************* */
+.welcome {
+   background: #EDF2EC;
 
+}
+.welcome__container {
+   display: flex;
+   flex: 1 1 50%;
+   justify-content: space-between;
+   min-height: 532px;
+   padding: 74px 0px 94px 0px;
+}
+
+.welcome__content {
+   max-width: 536px;
+}
+.descrip {
+   margin-top: 36px;
+   font-weight: 700;
+   font-size: 45px;
+   line-height: 50px;
+   color: #717171;
+}
+.descrip span{
+   color: #499A18;
+}
+.welcome__text {
+   margin-top: 42px;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 175%;
+   color: #636060;
+}
+.welcome__btn {
+   margin-top: 48px;
+   width: 158px;
+   height: 44px;
+   font-weight: 400;
+   font-size: 16px;
+   text-align: center;
+   color: #000000;
+   border: 2px solid #E06733;
+   border-radius: 10px;
+}
+
+.welcome__btn:hover{
+   color: #FFFFFF;
+   background: #E06733;
+}
