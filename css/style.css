@@ -125,7 +125,6 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 }
 .welcome__container {
    display: flex;
-   flex: 1 1 50%;
    justify-content: space-between;
    min-height: 532px;
    padding: 74px 0px 94px 0px;
@@ -166,4 +165,40 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 .welcome__btn:hover{
    color: #FFFFFF;
    background: #E06733;
+}
+
+/* ******************ABOUT************ */
+
+.about {
+}
+.about__container {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 93px;
+}
+
+.about__content {
+   flex: 1 1 50%;
+
+}
+.title {
+   font-family: 'Inika';
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 52px;
+   color: #499A18;
+   margin-top: 27px;
+  
+}
+
+.title span{
+   color: #E06733;
+}
+.about__text {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 150%;
+   color: #636060;
+   margin-top: 40px;
+
 }
