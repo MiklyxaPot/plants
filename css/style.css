@@ -21,6 +21,7 @@ nav,footer,header,aside{display: block;}
 html,body{
    height: 100%;
    width: 100%;
+
    font-family: 'Inter', sans-serif;  
    font-size: 100%;
    line-height: 1;
@@ -51,6 +52,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
    min-height: 100%;
    display: flex;
    flex-direction: column;
+ 
 }
 
 .container{
@@ -90,31 +92,33 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
    font-weight: 400;
    font-size: 16px;
 }
-.header__nav {
-  display: flex;
-
-  
+.header__menu {
+ 
 }
-.nav {
+.menu {
 }
-.nav__list {
+.menu__icon {
+}
+.icon-menu {
+}
+.menu__body {
+}
+.menu__list {
    display: flex;
-    
+   gap: 46px;
+   justify-content: space-between;
 }
-.nav__item:not(:last-child){
-  margin-right: 46px;
+.menu__item {
 }
-.nav__item {
-   font-family: 'Inika';
-   font-style: normal;
+.menu__link {
    font-weight: 400;
    font-size: 16px;
-   
-}
-.nav__item a{
+   line-height: 50px;
    color: #010201;
 }
-.nav__item a:hover{
+
+.menu__link:hover{
+   font-weight: 700;
    color: #E06733;
 }
 
@@ -170,24 +174,30 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 /* ******************ABOUT************ */
 
 .about {
+   display: flex;
 }
 .about__container {
    display: flex;
    justify-content: space-between;
+   gap: 153px;
    margin-top: 93px;
 }
 
 .about__content {
-   flex: 1 1 50%;
+   
 
 }
+.about__title {
+    margin-top: 27px;
+}
+
 .title {
    font-family: 'Inika';
    font-weight: 400;
    font-size: 40px;
    line-height: 52px;
    color: #499A18;
-   margin-top: 27px;
+   
   
 }
 
@@ -200,5 +210,178 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
    line-height: 150%;
    color: #636060;
    margin-top: 40px;
+ 
+}
+.about__image{
+justify-self: end;
+}
 
+/*  menu burger */
+.icon-menu {
+	display: none;
+	@media (max-width: 768px) {
+		display: block;
+		position: relative;
+      flex: 0 0 rem(30);
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - rem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+
+
+/* ********SERVISE************* */
+.servise {
+   background: #EDF2EC;
+   padding: 40px 0 66px 0;
+}
+.servise__container {
+
+}
+
+.servise__head {
+   display: flex;
+   align-items: center;
+}
+.servise__title {
+   margin-right: 142px;
+}
+.servise__btns {
+   display: flex;
+   gap: 38px;
+   margin-right: 205px;
+}
+.servise__btn {
+
+}
+
+.btn {
+   width: 161px;
+   height: 50px;
+   border: 1px solid #E06733;
+   border-radius: 5px;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 26px;
+   color: #E06733;
+}
+
+.btn:hover{
+   background: #E06733;
+   border: 1px solid #E06733;
+   color: #FFFFFF;
+}
+.servise__card {
+   margin-top: 97px;
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.servise__item {
+   max-width: 329px;
+   max-height: 450px;
+   
+}
+.servise__item:not(:last-child){
+   margin-bottom: 55px;
+}
+.item-servise {
+   flex: 1 1 33.333%;
+}
+
+.item-servise img {
+   width: 100%;
+   border-radius: 20px 20px 0px 0px;
+}
+
+.item-servise__content{
+   border-radius: 0 0 20px 20px;
+   border: 1px solid #E3E1D5;
+}
+
+.item-servise__title {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 100%;
+   color: #E06733;
+   text-align: center;
+   margin-top: 10px;
+}
+.item-servise__descript {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 125%;
+   color: #717171;
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 36px;
+}
+
+/* **********Price********** */
+
+.prices {
+   padding: 40px 0 115px 0;
+}
+.prices {
+}
+.prices__container {
+}
+.container {
+}
+.prices__left {
+}
+.prices__title {
+}
+.content-prices__selest {
+}
+.selest-prices {
+}
+.selest-prices__btn {
+}
+.prices__right {
+}
+.prices__discr {
+}
+.content-prices__btn {
+}
+.btn {
 }
