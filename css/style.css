@@ -445,25 +445,84 @@ justify-self: end;
 
 .contact {
    background: #EDF2EC;
-   height: 500px;
+  
+   padding-top: 60px;
 }
-.contact__container {
-position: relative;
-display: flex;
-justify-content: space-between;
+.contact__container { 
+   height: 550px;
+   display: flex;
+   justify-content: space-between;
 }
 .contact__image {
-/* position: absolute;
-top: 100%;
-left: 0; */
-width: 400px;
-height: 496px;
-background: url('../img/contact_woman.png')  0 0 no-repeat;
+
+  
+   width: 400px;
+   height: 100%;
+   background: url('../img/contact_woman.png') bottom /contain no-repeat;
+  
 }
 .contact__title {
-
+   font-weight: 700;
+   font-size: 40px;
+   color: #499A18;
 }
 
 .contact__selest{
+   display: block;
+   height: 50px;
+   width: 450px;
+   font-weight: 400;
+   font-size: 20px;
+   letter-spacing: 0.05em;
+   color: #717171;
+   background: #D6E7D2;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 0px;
+   padding: 5px 35px 5px 20px;
+   margin-top: 148px;
+}
 
+/* ***********footer************ */
+
+.footer {
+   
+}
+.footer__container{
+   height: 130px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.footer__left {
+   display: flex;
+   font-weight: 400;
+   font-size: 20px;
+   color: #000000;
+}
+.footer__left a{
+   font-weight: 400;
+   font-size: 20px;
+   color: #000000;
+}
+.footer__left a:hover{
+   color: #E06733;
+}
+.footer__date {
+   margin:  0 20px;
+   font-weight: 400;
+   font-size: 20px;
+   color: #000000;
+}
+
+.footer__title a{
+   font-weight: 400;
+   font-size: 20px;
+   color: #000000;
+}
+.footer__title a:hover{
+   color: #E06733;
+}
+
+.footer__soial a:not(:last-child) {
+   margin-right: 22px;
 }
